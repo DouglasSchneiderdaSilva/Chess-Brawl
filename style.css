@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(37, 105, 37);
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+    box-shadow: #b9c4bc 5px 5px 10px;
+}
+
+.tab.active {
+    background-color: rgb(37, 105, 37);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+input, button {
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+
+button {
+    background-color: rgb(37, 105, 37);
+    color: white;
+    border: none;
+    
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    
+}
+
+.player-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.match-card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.match-card > div {
+    flex: 1;
+    text-align: center;
+}
+
+.event-button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+table {
+    width: 100%;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: white;
+}
+
+#campeaoContainer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(224, 224, 16);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.trofeu {
+    font-size: 24px;
+}

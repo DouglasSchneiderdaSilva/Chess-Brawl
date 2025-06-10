@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Brawl</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CHESS BRAWL</h1>
+    
+    
+    <div class="tabs">
+        <div class="tab active" data-tab="registro">Registro do Jogador</div> 
+        <div class="tab" data-tab="torneio">Gerenciamento do torneio</div> 
+        <div class="tab" data-tab="estatistica">Estatísticas</div>
+    </div>
+    
+    <div id="registro" class="tab-content active container">
+        <h2>Registrar Jogadores</h2>
+        <p>Insira os dados do jogador abaixo. É necessário ter 4 ou 8 jogadores para um torneio</p>
+        <div>
+            <input type="text" id="playerNome" placeholder="Nome do Jogador" required>
+            <input type="text" id="playerApelido" placeholder="Apelido" required>
+            <input type="number" id="playerRating" placeholder="Rating (1-15000)" min="1" max="15000" required>
+            <button id="addPlayerBtn">Adicionar Jogador</button>
+        </div>
+        <h3>Jogadores Registrados</h3>
+        <div id="playerLista"></div>
+        <button id="comecarTorneioBtn" disabled>Começar Torneio</button>
+    </div>
+    
+    <div id="torneio" class="tab-content container">
+        <h2>Torneio em andamento</h2>
+        <div id="infoRound"></div> 
+        <div id="listaMatches"></div> 
+        <div id="gerenciamentoMatches" style="display: none;">
+            <h3>Gerenciamento de confronto</h3>
+            <div id="confrontoAtual"></div>
+            <h4>Adicionar Eventos</h4>
+            <div id="player1Eventos"></div>
+            <div id="player2Eventos"></div>
+            <button id="terminarConfrontoBtn">Finalizar confronto</button>
+        </div>
+    </div>
+    
+    <div id="estatistica" class="tab-content container">
+        <h2>Estatística dos jogadores</h2>
+        <table id="tabelaStatus"> 
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Nome</th>
+                    <th>Apelido</th>
+                    <th>Rating</th>
+                    <th>Pontos</th>
+                    <th>Jogadas Originais</th>
+                    <th>Gafes</th>
+                    <th>Vantagens</th>
+                    <th>Desrespeito</th>
+                    <th>Ataque de Fúria</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="statusTableBody"></tbody>
+        </table>
+        <div id="campeaoContainer" style="display: none;"></div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
